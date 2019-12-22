@@ -1,0 +1,30 @@
+<%- include('includes/head.ejs') %>
+</head>
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <div align="center">
+        <img src="/images/Know Better Clothing Logo.jpg" alt="">
+    </div>
+    <h1>Know Better Clothing</h1>
+<hr>
+<br>
+<br>
+<div>
+    <a href="">
+        <img src="/images/blackjumperkbc.jpg" alt="" id="blackjumper">
+        <p>
+            <%= data.brand %>
+            <%= data.type %>
+            <%= data.colour %>
+            <%= data.size %>
+             
+        </p>
+        <p>
+            <%= data.price %>
+        </p>
+    </a>
+</div>
+
+<%- include('includes/products.ejs') %>
+</body>
+</html>
