@@ -1,9 +1,11 @@
 <%- include('includes/head.ejs') %>
+<%- include('includes/home.ejs') %>
+<%- include('includes/verification.ejs') %>
 </head>
 <body>
-    <%- include('includes/navigation.ejs') %>
-    <%- include('includes/home.ejs') %>
-    <%- include('includes/verification.ejs') %>
+    
+    
+    
     <div align="center">
         <img src="/images/Know Better Clothing Logo.jpg" alt="">
     </div>
@@ -11,13 +13,13 @@
     <hr>
     <div>
         <center><h2>Login Here!</h2></center>
-        <form action="/shop" method="POST" align="center">
+        <form action="/shop" method="post" align="center">
             Email Address:<br>
-            <input type="text" value="">
+            <input type="text" name="emailAddress" value="">
             <br>
             <br>
             Password:<br>
-            <input type="password" value="">
+            <input type="password" name="password" value="">
             <br>
             <input type="submit" value="Login">
         </form>

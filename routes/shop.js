@@ -1,11 +1,9 @@
 const express = require('express');
-const Shop = require('../models/shop')
+const shopController = require('../controllers/shop')
 const router = express.Router();
 
-router.get('/shop', function (req, res) {
-    const shop = new Shop()
-    result = shop.fetchProduct(2)
-    res.render('shop', {title: 'SHOP', path: '/shop', data: result})
-});
+router.get('/shop', shopController.getShopProduct)
+router.post('/shop', shopController.postShopProduct)
+
 
 module.exports = router

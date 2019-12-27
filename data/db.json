@@ -1,14 +1,86 @@
 {
-    "posts": [
-      { "id": 1, "title": "lowdb is awesome"},
-      { "id": 2, "title": "lowdb is great"}
-    ],
-    "user": {
-      "name": "typicode"
+  "posts": [
+    {
+      "id": 1,
+      "title": "lowdb is awesome"
     },
-    "count": 1, 
-    "products": [
-        {"id": 1, "brand": "Know Better", "product": "Jumper", "colour": "Black", "size": "Small", "price":"£25.00"},
-        {"id": 2, "brand": "Know Better", "product": "Hoodie", "colour": "White", "size": "Small", "price":"£30.00"}
-    ] 
-  }
+    {
+      "id": 2,
+      "title": "lowdb is great"
+    }
+  ],
+  "users": [
+    {
+      "name": "timi",
+      "emailAddress": "timi.ladele@hotmail.com",
+      "password": "pass"
+    },
+    {
+      "name": "simon",
+      "emailAddress": "simon.ladele@hotmail.com",
+      "password": "passing"
+    },
+    {
+      "name": "TLadele",
+      "emailAddress": "timi.ladele@hotmail.com",
+      "password": "tyihgnfj"
+    },
+    {},
+    {
+      "name": "Adeogo303",
+      "emailAddress": "adeogo@hogyifm",
+      "password": "adeogo"
+    },
+    {},
+    {}
+  ],
+  "count": 1,
+  "products": [
+    {
+      "id": 1,
+      "brand": "Know Better",
+      "product": "Jumper",
+      "colour": "Black",
+      "size": "Small",
+      "price": "£25.00",
+      "img": "blackjumperkbc.jpg"
+    },
+    {
+      "id": 2,
+      "brand": "Know Better",
+      "product": "Hoodie",
+      "colour": "White",
+      "size": "Small",
+      "price": "£30.00",
+      "img": "blackjumperkbc.jpg"
+    }
+  ],
+  "carts": [
+    {
+      "products": [
+        {
+          "id": 1,
+          "count": 2
+        },
+        {
+          "id": 2,
+          "count": 3
+        }
+      ],
+      "user": "simon"
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "count": 2
+        },
+        {
+          "id": 2,
+          "count": 3
+        }
+      ],
+      "user": "timi"
+    }
+  ]
+}

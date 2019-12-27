@@ -4,18 +4,14 @@ const path = require('path')
 const adapter = new FileSync(path.join(__dirname, '../data', 'db.json'))
 const db = low(adapter)
 
-module.exports = class Shop {
+module.exports = class Login {
     constructor(){
     }
-    fetchProduct(idx){
-        return db.get('products').find({id: 1}).value()
-    }
-    verifyLogin(name){
+    registerUser(name, emailAddress, password){
         return db
         .get('users')
-        .find({ name: name})
-        .value()
+        .push({ name: name, emailAddress: emailAddress, password: password})
+        .write()
+        .name
     }
-    
-    
 }

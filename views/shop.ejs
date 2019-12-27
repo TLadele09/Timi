@@ -11,7 +11,7 @@
 <br>
 <div>
     <a href="">
-        <img src="/images/blackjumperkbc.jpg" alt="" id="blackjumper">
+        <img src="/images/<%= data.img %>" alt="">
         <p>
             <%= data.brand %>
             <%= data.type %>
@@ -21,10 +21,10 @@
         </p>
         <p>
             <%= data.price %>
+            <%= sum %>
         </p>
     </a>
 </div>
-
 <%- include('includes/products.ejs') %>
 </body>
 </html>
