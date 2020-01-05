@@ -1,8 +1,22 @@
+<link rel="stylesheet" href="/css/navigation.css">
 <div class="topnav">
     <a class="<%= path === '/' ? 'active' : ''  %>" href="/">Home</a>
-    <a class="<%= path === '/shop' ? 'active' : '' %>" href="/shop">Shop</a>
-    <a class="<%= path === '/mens' ? 'active' : '' %>" href="/mens">Mens</a>
-    <a class="<%= path === '/womens' ? 'active' : '' %>" href="/womens">Womens</a>
+    <div class="dropdown">
+        <a class="dropbtn" href="/shop">Shop
+            <i class="fa fa-caret-down"></i>
+        </a> 
+             <div class="dropdown-content">
+                <b><a href="/mens">Mens</a></b>
+                <b><a href="/womens">Womens</a></b>
+             </div>
+    </div>
     <a class="<%= path === '/contact' ? 'active' : '' %>" href="/contact">Contact</a>
     <a class="<%= path === '/about' ? 'active' : '' %>" href="/about">About</a>
+    <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search..." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
 </div>
+    
