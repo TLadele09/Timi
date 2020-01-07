@@ -9,19 +9,28 @@
 <hr>    
 <br>
 <br>
-<div>
-    <img src="/images/blackjumperkbc.jpg" alt="" id="blackjumper">
-</div>
-<p>
-    <%= data.brand %>
-    <%= data.type %>
-    <%= data.colour %>
-    <%= data.size %>
-     
-</p>
-<p>
-    <%= data.price %>
-</p>
+    
+        <div>
+            <a href="">
+                <img src="/images/<%= data.img %>" alt="">
+            </a>
+        </div>
+    <div>
+        <a href="">
+            <p>
+                <%= data.brand %>
+                <%= data.type %>
+                <%= data.colour %>
+                <%= data.size %>
+                 
+            </p>
+            <p>
+                <%= data.price %>
+            </p>
+        </a>
+    </div>
+        
+
 <%- include('includes/products.ejs') %>
 <%- include('includes/footer.ejs') %>
 </body>

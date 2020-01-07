@@ -1,22 +1,35 @@
 <link rel="stylesheet" href="/css/navigation.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <div class="topnav">
     <a class="<%= path === '/' ? 'active' : ''  %>" href="/">Home</a>
     <div class="dropdown">
         <a class="dropbtn" href="/shop">Shop
-            <i class="fa fa-caret-down"></i>
+          <i class="fa fa-caret-down"></i>
         </a> 
-             <div class="dropdown-content">
-                <b><a href="/mens">Mens</a></b>
-                <b><a href="/womens">Womens</a></b>
-             </div>
-    </div>
-    <a class="<%= path === '/contact' ? 'active' : '' %>" href="/contact">Contact</a>
-    <a class="<%= path === '/about' ? 'active' : '' %>" href="/about">About</a>
-    <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Search..." name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
+        <div class="dropdown-content">
+            <div class="header">
+              <h2 align="center">Know Better Clothing</h2>
+            </div> 
+            <div class="row">
+              <div class="column">
+                <h3 align="center"><b><a href="/mens">Mens</a></b></h3>
+                <a href="#">Jumpers</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Hoodies</a>
+              </div>
+              <div class="column">
+                <h3 align="center"><b><a href="/womens">Womens</a></b></h3>
+                <a href="#">Jumpers</a>
+                <a href="#">T-Shirts</a>
+                <a href="#">Hoodies</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <a class="<%= path === '/contact' ? 'active' : '' %>" href="/contact">Contact</a>
+      <a class="<%= path === '/about' ? 'active' : '' %>" href="/about">About</a>
+      <div>
+        <a href=""><i class="fas fa-shopping-bag" style='font-size:24px'></i></a>
       </div>
 </div>
     
