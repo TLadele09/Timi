@@ -43,3 +43,8 @@ img {
 #backgroundimage {
     background-image: url('Know Better Clothing Logo.jpg');
 }
+#navigationpic {
+    width:30px;
+    height:30px;
+    float:left;
+}

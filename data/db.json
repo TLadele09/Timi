@@ -41,7 +41,13 @@
       "name": "Azeem098",
       "emailAddress": "azeem.03@gmail.com",
       "password": "azeem8654"
-    }
+    },
+    {
+      "name": "Jamie09",
+      "emailAddress": "jamie.james@gmail.com",
+      "password": "abc123"
+    },
+    {}
   ],
   "count": 1,
   "products": [
@@ -52,7 +58,7 @@
       "colour": "Black",
       "size": "Small",
       "price": "£25.00",
-      "img": "blackjumperkbc.jpg"
+      "img": "Men's Jumper Black.jpg"
     },
     {
       "id": 2,
