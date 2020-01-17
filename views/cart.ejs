@@ -1,0 +1,45 @@
+<%- include('includes/head.ejs') %>
+<%- include('includes/cart.ejs') %>
+<div align="center">
+    <h2>Know Better Clothing</h2>
+    <h3>Shopping Cart</h3>
+</div>
+<hr>
+<div class="shopping-cart" align="center"!>
+    <div class="item">
+      <div class="buttons">
+        <span class="delete-btn"></span>
+        <span class="like-btn"></span>
+      </div>
+   
+      <div class="image">
+        <img id="cartpic" style="height: 60px; width: 50px;" src="/images/<%= data.img %>" alt="">
+      </div>
+   
+      <div class="description">
+        <span><%= data.brand %></span>
+        <span><%= data.type %></span>
+        <span><%= data.colour %></span>
+        <span><%= data.size %></span>
+      </div>
+   
+      <div class="quantity">
+        <button class="plus-btn" type="button" name="button">
+          <img src="plus.svg" alt="" />
+        </button>
+        <input type="text" name="name" value="1">
+        <button class="minus-btn" type="button" name="button">
+          <img src="minus.svg" alt="" />
+        </button>
+      </div>
+   
+      <div class="total-price">
+        <p>
+            <%= data.price %>
+        </p>
+      </div>
+      </div>
+    </div>
+  </div>
+<hr>
+</html>

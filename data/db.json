@@ -1,14 +1,4 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "lowdb is awesome"
-    },
-    {
-      "id": 2,
-      "title": "lowdb is great"
-    }
-  ],
   "users": [
     {
       "name": "timi",
@@ -31,12 +21,6 @@
       "emailAddress": "adeogo@hogyifm",
       "password": "adeogo"
     },
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
     {
       "name": "Azeem098",
       "emailAddress": "azeem.03@gmail.com",
@@ -47,7 +31,18 @@
       "emailAddress": "jamie.james@gmail.com",
       "password": "abc123"
     },
-    {}
+    {
+      "customer_ID": 1,
+      "title": "Mr",
+      "firstname": "Jason",
+      "surname": "Black",
+      "emailAddress": "Jason.black@gmail.com",
+      "housenumber": "24",
+      "streetName": "Evergreen Avenue",
+      "city": "London",
+      "country": "England",
+      "password": "False4678"
+    }
   ],
   "count": 1,
   "products": [
@@ -75,11 +70,11 @@
       "products": [
         {
           "id": 1,
-          "count": 2
+          "quantity": 2
         },
         {
           "id": 2,
-          "count": 3
+          "quantity": 3
         }
       ],
       "user": "simon"
@@ -88,14 +83,16 @@
       "products": [
         {
           "id": 1,
-          "count": 2
+          "quantity": 2
         },
         {
           "id": 2,
-          "count": 3
+          "quantity": 3
         }
       ],
       "user": "timi"
     }
   ]
+
+  
 }
