@@ -1,53 +1,57 @@
 {
   "users": [
     {
-      "name": "timi",
-      "emailAddress": "timi.ladele@hotmail.com",
-      "password": "pass"
-    },
-    {
-      "name": "simon",
-      "emailAddress": "simon.ladele@hotmail.com",
-      "password": "passing"
-    },
-    {
-      "name": "TLadele",
-      "emailAddress": "timi.ladele@hotmail.com",
-      "password": "tyihgnfj"
-    },
-    {},
-    {
-      "name": "Adeogo303",
-      "emailAddress": "adeogo@hogyifm",
-      "password": "adeogo"
-    },
-    {
-      "name": "Azeem098",
-      "emailAddress": "azeem.03@gmail.com",
-      "password": "azeem8654"
-    },
-    {
-      "name": "Jamie09",
-      "emailAddress": "jamie.james@gmail.com",
-      "password": "abc123"
-    },
-    {
       "customer_ID": 1,
-      "title": "Mr",
       "firstname": "Jason",
       "surname": "Black",
       "emailAddress": "Jason.black@gmail.com",
-      "housenumber": "24",
+      "houseNumber": "24",
       "streetName": "Evergreen Avenue",
       "city": "London",
       "country": "England",
       "password": "False4678"
+    },
+    {
+      "emailAddress": "timi.ladele@hotmail.com",
+      "password": "Italy75846"
+    },
+    {
+      "firstname": "Timi",
+      "surname": "Ladele",
+      "emailAddress": "timi.ladele@hotmail.com",
+      "houseNumber": "78",
+      "streetName": "Bluestreet Rd",
+      "city": "Bluestreet",
+      "country": "England",
+      "password": "Italy7634"
     }
   ],
-  "count": 1,
+  "orders": [
+    {
+      "order_id": 3,
+      "customer_id": 1,
+      "dateOforder": "27/08/2020",
+      "delivered?": false,
+      "total_price": 50
+    }
+  ],
+  "order_products": [
+    {
+      "order_product_id": 1,
+      "order_id": 3,
+      "product_id": 2,
+      "quantity": 4
+    },
+    {
+      "order_product_id": 1,
+      "order_id": 3,
+      "product_id": 1,
+      "quantity": 2
+    }
+  ],
   "products": [
     {
-      "id": 1,
+      "product_id": 1,
       "brand": "Know Better",
       "product": "Jumper",
       "colour": "Black",
@@ -56,7 +60,7 @@
       "img": "Men's Jumper Black.jpg"
     },
     {
-      "id": 2,
+      "product_id": 2,
       "brand": "Know Better",
       "product": "Hoodie",
       "colour": "White",
@@ -64,35 +68,5 @@
       "price": "£30.00",
       "img": "blackjumperkbc.jpg"
     }
-  ],
-  "carts": [
-    {
-      "products": [
-        {
-          "id": 1,
-          "quantity": 2
-        },
-        {
-          "id": 2,
-          "quantity": 3
-        }
-      ],
-      "user": "simon"
-    },
-    {
-      "products": [
-        {
-          "id": 1,
-          "quantity": 2
-        },
-        {
-          "id": 2,
-          "quantity": 3
-        }
-      ],
-      "user": "timi"
-    }
   ]
-
-  
 }

@@ -1,0 +1,19 @@
+<%- include('includes/head.ejs') %>
+<%- include('includes/cart.ejs') %>
+<%- include('includes/payment.ejs') %>
+<div class="container">
+    <h2>Delivery Options:</h2>
+    <br>
+    <br>
+    <form action="/action_page.php">
+      <input type="checkbox" name="delivery_option1" value="nextDay">Next Day Delivery<br>
+      <input type="checkbox" name="delivery_option2" value="houseDelivery">House Delivery<br>
+      <input type="checkbox" name="delivery_option3" value="standardDelivery">Standard Delivery<br>
+      <input type="checkbox" name="delivery_option3" value="sameDayDelivery">Same Day Delivery<br><br>
+      <br>
+    </form>
+</div>
+<div>
+  <a href="/payment"><input type="submit" value="Continue to payment" class="btn"></a> 
+</div>
+</html>

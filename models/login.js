@@ -7,10 +7,10 @@ const db = low(adapter)
 module.exports = class Login {
     constructor(){
     }
-    registerUser(name, emailAddress, password){
+    registerUser(firstname, surname, emailAddress, houseNumber, streetName, city, country, password){
         return db
         .get('users')
-        .push({ name: name, emailAddress: emailAddress, password: password})
+        .push({ firstname: firstname, surname: surname, emailAddress: emailAddress, houseNumber: houseNumber, streetName: streetName, city: city, country: country, password: password})
         .write()
         .name
     }

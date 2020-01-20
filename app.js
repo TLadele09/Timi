@@ -10,6 +10,7 @@ const login_routes = require('./routes/login')
 const signup_routes = require('./routes/signup')
 const cart_routes = require('./routes/cart')
 const payment_routes = require('./routes/payment')
+const delivery_routes = require('./routes/delivery')
 const path = require('path')
 const app = express();
 //middleware
@@ -39,6 +40,8 @@ app.use(signup_routes);
 app.use(cart_routes);
 
 app.use(payment_routes);
+
+app.use(delivery_routes);
 
 app.use(function(req, res, next) {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'))
