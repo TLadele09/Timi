@@ -8,8 +8,11 @@ module.exports = class Shop {
     constructor(){
     }
     fetchProduct(idx){
-        return db.get('products').find({product_id: 1}).value()
+        return db.get('products')
+        .find({product_id: 1})
+        .value()
     }
+
     verifyLogin(name){
         return db
         .get('users')

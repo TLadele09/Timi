@@ -3,14 +3,14 @@ const Shop = require('../models/shop')
 exports.getShopProduct = (req, res) => {
     console.log(req.body.emailAddress, req.body.password)
     const shop = new Shop()
-    result = shop.fetchProduct(2)
+    const result = shop.fetchProduct()
     const sum = shopAddition(1,6)
     res.render('shop', {title: 'SHOP', path: '/shop', data: result, sum: sum})
 }
 exports.postShopProduct = (req, res) => {
     console.log(req.body.emailAddress, req.body.password)
     const shop = new Shop()
-    result = shop.fetchProduct(2)
+    result = shop.fetchProduct()
     // if (req.body.emailAddress==="timi"){
     //     res.render('shop', {title: 'SHOP', path: '/shop', data: result, sum: 2})
     // }

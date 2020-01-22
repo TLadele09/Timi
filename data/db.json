@@ -62,11 +62,20 @@
     {
       "product_id": 2,
       "brand": "Know Better",
-      "product": "Hoodie",
+      "product": "Jumper",
       "colour": "White",
       "size": "Small",
       "price": "£30.00",
-      "img": "blackjumperkbc.jpg"
+      "img": "Women's Jumper White.jpg"
+    },
+    {
+      "product_id": 3,
+      "brand": "Know Better",
+      "product": "Hoodie",
+      "colour": "Black",
+      "size": "Medium",
+      "price": "£30.00",
+      "img": "Men's Hoodie Black .jpg"
     }
   ]
 }

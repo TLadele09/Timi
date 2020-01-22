@@ -6,25 +6,39 @@
 <hr>
 <br>
 <br>
-<div>
-    <a href="">
-        <img src="/images/<%= data.img %>" alt="">
-    </a>
+<div id="row">
+    <div id="column">
+        <a href="">
+            <img src="/images/<%= data.img %>" alt="">
+            <p>
+                <%= data.brand %>
+                <%= data.type %>
+                <%= data.colour %>
+                <%= data.size %>
+                 
+            </p>
+            <p>
+                <%= data.price %>
+            </p>
+        </a>
+    </div>
+    <div id="column">
+        <a href="">
+            <img src="/images/<%= data.img %>" alt="">
+            <p>
+                <%= data.brand %>
+                <%= data.type %>
+                <%= data.colour %>
+                <%= data.size %>
+                 
+            </p>
+            <p>
+                <%= data.price %>
+            </p>
+        </a>
+    </div>
 </div>
-<div>
-<a href="">
-    <p>
-        <%= data.brand %>
-        <%= data.type %>
-        <%= data.colour %>
-        <%= data.size %>
-         
-    </p>
-    <p>
-        <%= data.price %>
-    </p>
-</a>
-</div>
+    
 <%- include('includes/products.ejs') %>
 <%- include('includes/footer.ejs') %>
 </body>

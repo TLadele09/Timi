@@ -16,6 +16,8 @@ module.exports = class Cart {
         .id
     }
     fetchProduct(idx){
-        return db.get('products').find({id: 1}).value()
+        return db.get('products')
+        .find({product_id: 1})
+        .value()
     }
 }
