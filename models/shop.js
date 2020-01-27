@@ -12,6 +12,9 @@ module.exports = class Shop {
         .find({product_id: 1})
         .value()
     }
+    fetchAllProducts(){
+        return db.get('products').value()
+    }
 
     verifyLogin(name){
         return db

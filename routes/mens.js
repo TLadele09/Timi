@@ -1,12 +1,10 @@
 const express = require('express');
-const Mens = require('../models/mens');
+const mensController = require('../controllers/mens')
 const router = express.Router();
 
 
-router.get('/mens', function (req, res) {
-    const mens = new Mens()
-    result = mens.fetchProduct(2)
-    res.render('mens', {title: 'MENS', path: '/mens', data: result})
-});
+router.get('/mens', mensController.getMensProduct)
+router.post('/mens', mensController.postMensProduct)
+
 
 module.exports = router

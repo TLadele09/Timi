@@ -8,7 +8,9 @@ module.exports = class Mens {
     constructor(){
     }
     fetchProduct(idx){
-        return db.get('products').find({product_id: 1}).value()
+        return db.get('products').find({gender: Mens}).value()
     }
-    
+    fetchAllProducts(){
+        return db.get('products').value()
+    }
 }

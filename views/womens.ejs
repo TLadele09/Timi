@@ -6,24 +6,25 @@
 <hr>
 <br>
 <br>
-<div>
-    <a href="">
-        <img src="/images/<%= data.img %>" alt="">
-    </a>
-</div>
-<div>
-<a href="">
-    <p>
-        <%= data.brand %>
-        <%= data.type %>
-        <%= data.colour %>
-        <%= data.size %>
-         
-    </p>
-    <p>
-        <%= data.price %>
-    </p>
-</a>
+<div class="row">
+    <% for(data of temp) { %>
+        <!-- <% console.log(data[2]) %> -->
+        <div class="columnproduct">
+            <a href="">
+                <img src="/images/<%= data.img %>" alt="">
+                <p>
+                    <%= data.brand %>
+                    <%= data.type %>
+                    <%= data.colour %>
+                    <%= data.size %>
+                     
+                </p>
+                <p>
+                    <%= data.price %>
+                </p>
+            </a>
+        </div>
+        <% } %>  
 </div>
 <%- include('includes/products.ejs') %>
 <%- include('includes/footer.ejs') %>

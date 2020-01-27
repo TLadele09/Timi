@@ -24,6 +24,17 @@
       "city": "Bluestreet",
       "country": "England",
       "password": "Italy7634"
+    },
+    {
+      "customer_id": "1CW67OZQ",
+      "firstname": "Timi",
+      "surname": "Ladele",
+      "emailAddress": "timi.ladele@hotmail.com",
+      "houseNumber": "24",
+      "streetName": "Bluestreet Rd",
+      "city": "Bluestreet",
+      "country": "England",
+      "password": "Timi8674"
     }
   ],
   "orders": [
@@ -57,6 +68,7 @@
       "colour": "Black",
       "size": "Small",
       "price": "£25.00",
+      "gender": "Mens",
       "img": "Men's Jumper Black.jpg"
     },
     {
@@ -66,6 +78,7 @@
       "colour": "White",
       "size": "Small",
       "price": "£30.00",
+      "gender": "Womens",
       "img": "Women's Jumper White.jpg"
     },
     {
@@ -75,6 +88,7 @@
       "colour": "Black",
       "size": "Medium",
       "price": "£30.00",
+      "gender": "Mens",
       "img": "Men's Hoodie Black .jpg"
     }
   ]

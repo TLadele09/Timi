@@ -7,9 +7,10 @@
 <hr>    
 <br>
 <br>
-    
-    <div id="row">
-            <div id="column">
+    <div class="row">
+        <% for(data of temp) { %>
+            <% console.log(data) %>
+            <div class="columnproduct">
                 <a href="">
                     <img src="/images/<%= data.img %>" alt="">
                     <p>
@@ -17,6 +18,7 @@
                         <%= data.type %>
                         <%= data.colour %>
                         <%= data.size %>
+                        <%= data.gender %>
                          
                     </p>
                     <p>
@@ -24,8 +26,9 @@
                     </p>
                 </a>
             </div>
+            <% } %>  
     </div>
-            
+          
         
 
 

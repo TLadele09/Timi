@@ -1,6 +1,7 @@
 const low = require('lowdb')
 const FileSync = require('lowdb/adapters/FileSync')
 const path = require('path')
+const shortid = require('shortid');
 const adapter = new FileSync(path.join(__dirname, '../data', 'db.json'))
 const db = low(adapter)
 
@@ -10,7 +11,7 @@ module.exports = class Login {
     registerUser(firstname, surname, emailAddress, houseNumber, streetName, city, country, password){
         return db
         .get('users')
-        .push({ firstname: firstname, surname: surname, emailAddress: emailAddress, houseNumber: houseNumber, streetName: streetName, city: city, country: country, password: password})
+        .push({customer_id: shortid.generate(), firstname: firstname, surname: surname, emailAddress: emailAddress, houseNumber: houseNumber, streetName: streetName, city: city, country: country, password: password})
         .write()
         .name
     }
