@@ -1,11 +1,10 @@
 const express = require('express');
-const Womens = require('../models/womens');
+const mensController = require('../controllers/womens')
 const router = express.Router();
 
-router.get('/womens', function (req, res) {
-    const womens = new Womens()
-    result = womens.fetchProduct(2)
-    res.render('womens', {title: 'WOMENS', path: '/womens', data:result})
-});
+
+router.get('/womens', mensController.getWomensProduct)
+router.post('/womens', mensController.postWomensProduct)
+
 
 module.exports = router

@@ -89,7 +89,17 @@
       "size": "Medium",
       "price": "£30.00",
       "gender": "Mens",
-      "img": "Men's Hoodie Black .jpg"
+      "img": "Men's Hoodie Black.jpg"
+    },
+    {
+      "product_id": 4,
+      "brand": "Know Better",
+      "product": "T-Shirt",
+      "colour": "Navy",
+      "size": "Medium",
+      "price": "£20.00",
+      "gender": "Mens",
+      "img": "Men's T-Shirt Navy.jpg"
     }
   ]
 }

@@ -7,8 +7,10 @@ const db = low(adapter)
 module.exports = class Womens {
     constructor(){
     }
-    fetchProduct(idx){
-        return db.get('products').find({product_id: 2}).value()
+    fetchProduct(){
+        return db.get('products').find({gender: Womens}).value()
     }
-    
+    fetchAllProducts(){
+        return db.get('products').value()
+    }
 }

@@ -9,7 +9,7 @@ exports.getMensProduct = (req, res) => {
 }
 exports.postMensProduct = (req, res) => {
     console.log(req.body.emailAddress, req.body.password)
-    const shop = new Mens()
+    const mens = new Mens()
     result = mens.fetchProduct()
     temp = mens.fetchAllProducts()
     console.log(temp)
