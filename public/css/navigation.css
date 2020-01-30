@@ -175,8 +175,8 @@
 }
 
 #navpic {
-  float: none;
-  right: 50%;
+  position: absolute;
+  left: 770px;
   width: 50px;
   height: 60px;
   top: 0%;

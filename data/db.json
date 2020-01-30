@@ -95,11 +95,41 @@
       "product_id": 4,
       "brand": "Know Better",
       "product": "T-Shirt",
-      "colour": "Navy",
+      "colour": "White",
       "size": "Medium",
       "price": "£20.00",
       "gender": "Mens",
-      "img": "Men's T-Shirt Navy.jpg"
+      "img": "Men's T-Shirt White.jpg"
+    },
+    {
+      "product_id": 5,
+      "brand": "Know Better",
+      "product": "T-Shirt",
+      "colour": "Grey",
+      "size": "Medium",
+      "price": "£20.00",
+      "gender": "Mens",
+      "img": "Men's T-Shirt Grey.jpg"
+    },
+    {
+      "product_id": 6,
+      "brand": "Know Better",
+      "product": "T-Shirt",
+      "colour": "Grey",
+      "size": "Medium",
+      "price": "£20.00",
+      "gender": "Womens",
+      "img": "Women's T-Shirt Grey.jpg"
+    },
+    {
+      "product_id": 7,
+      "brand": "Know Better",
+      "product": "T-Shirt",
+      "colour": "Navy",
+      "size": "Medium",
+      "price": "£20.00",
+      "gender": "Womens",
+      "img": "Women's T-Shirt Navy.jpg"
     }
   ]
 }

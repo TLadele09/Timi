@@ -24,8 +24,8 @@ p {
     left: 292px;
 }
 #kbclogo{
-    display: block;
-    margin: 0 auto;
+    width: 110px;
+    height: 130px;
 }
 img {
     display: block;
@@ -41,7 +41,7 @@ img {
 }
   .columnproduct {
     float: left;
-    width: 30%;
+    width: 32%;
     padding: 5px;
   }
   
