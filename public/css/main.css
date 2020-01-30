@@ -1,5 +1,5 @@
 h1 {
-  color: black;
+  color: white;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -18,7 +18,7 @@ li{
   background-image: linear-gradient(rgba(0, 0, 0, 0.199), rgba(0, 0, 0, 0.603)), url("../images/heroimage.jpg");
 
   /* Set a specific height */
-  height: 55%;
+  height: 70%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;

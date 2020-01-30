@@ -7,5 +7,5 @@ exports.postRegisterUser = (req, res) => {
 }
 
 exports.getLogin = (req, res) => {
-    res.render('login', {title: 'LOGIN', path: '/login'})
+    res.render('login', {title: 'KBC Login', path: '/login'})
 }

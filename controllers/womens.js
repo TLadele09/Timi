@@ -5,7 +5,7 @@ exports.getWomensProduct = (req, res) => {
     result = womens.fetchProduct(2)
     temp = womens.fetchAllProducts()
     console.log(temp)
-    res.render('womens', {title: 'WOMENS', path: '/womens', temp: temp})
+    res.render('womens', {title: 'KBC Womens', path: '/womens', temp: temp})
 }
 exports.postWomensProduct = (req, res) => {
     console.log(req.body.emailAddress, req.body.password)

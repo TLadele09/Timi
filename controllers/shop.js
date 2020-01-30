@@ -5,7 +5,7 @@ exports.getShopProduct = (req, res) => {
     const shop = new Shop()
     const result = shop.fetchProduct()
     temp = shop.fetchAllProducts()
-    res.render('shop', {title: 'SHOP', path: '/shop', data: result, temp: temp})
+    res.render('shop', {title: 'KBC SHOP', path: '/shop', data: result, temp: temp})
 }
 exports.postShopProduct = (req, res) => {
     console.log(req.body.emailAddress, req.body.password)
