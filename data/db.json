@@ -76,13 +76,23 @@
       "brand": "Know Better",
       "product": "Jumper",
       "colour": "White",
-      "size": "Small",
+      "size": "Medium",
+      "price": "£25.00",
+      "gender": "Mens",
+      "img": "Men's Jumper White.jpg"
+    },
+        {
+      "product_id": 3,
+      "brand": "Know Better",
+      "product": "Hoodie",
+      "colour": "Black",
+      "size": "Medium",
       "price": "£30.00",
-      "gender": "Womens",
-      "img": "Women's Jumper White.jpg"
+      "gender": "Mens",
+      "img": "Men's Hoodie Black With Logo.jpg"
     },
     {
-      "product_id": 3,
+      "product_id": 4,
       "brand": "Know Better",
       "product": "Hoodie",
       "colour": "Black",
@@ -92,7 +102,7 @@
       "img": "Men's Hoodie Black.jpg"
     },
     {
-      "product_id": 4,
+      "product_id": 5,
       "brand": "Know Better",
       "product": "T-Shirt",
       "colour": "White",
@@ -102,7 +112,7 @@
       "img": "Men's T-Shirt White.jpg"
     },
     {
-      "product_id": 5,
+      "product_id": 6,
       "brand": "Know Better",
       "product": "T-Shirt",
       "colour": "Grey",
@@ -112,7 +122,27 @@
       "img": "Men's T-Shirt Grey.jpg"
     },
     {
-      "product_id": 6,
+      "product_id": 7,
+      "brand": "Know Better",
+      "product": "T-Shirt",
+      "colour": "Navy",
+      "size": "Medium",
+      "price": "£20.00",
+      "gender": "Mens",
+      "img": "Men's T-Shirt Navy.jpg"
+    },
+    {
+      "product_id": 8,
+      "brand": "Know Better",
+      "product": "T-Shirt",
+      "colour": "Black",
+      "size": "",
+      "price": "£20.00",
+      "gender": "Mens",
+      "img": "Men's T-Shirt Black Small Logo.jpg"
+    },
+    {
+      "product_id": 9,
       "brand": "Know Better",
       "product": "T-Shirt",
       "colour": "Grey",
@@ -122,7 +152,7 @@
       "img": "Women's T-Shirt Grey.jpg"
     },
     {
-      "product_id": 7,
+      "product_id": 10,
       "brand": "Know Better",
       "product": "T-Shirt",
       "colour": "Navy",
@@ -130,6 +160,67 @@
       "price": "£20.00",
       "gender": "Womens",
       "img": "Women's T-Shirt Navy.jpg"
+    },
+    {
+      "product_id": 11,
+      "brand": "Know Better",
+      "product": "T-Shirt",
+      "colour": "Black",
+      "size": "Medium",
+      "price": "£20.00",
+      "gender": "Womens",
+      "img": "Women's T-Shirt Black.jpg"
+    },
+    {
+      "product_id": 12,
+      "brand": "Know Better",
+      "product": "Jumper",
+      "colour": "Black",
+      "size": "Medium",
+      "price": "£30.00",
+      "gender": "Womens",
+      "img": "Women's Jumper Black.jpg"
+    },
+    {
+      "product_id": 13,
+      "brand": "Know Better",
+      "product": "Jumper",
+      "colour": "White",
+      "size": "Small",
+      "price": "£30.00",
+      "gender": "Womens",
+      "img": "Women's Jumper White.jpg"
+    },
+    {
+      "product_id": 14,
+      "brand": "Know Better",
+      "product": "Jumper",
+      "colour": "Black",
+      "size": "Medium",
+      "price": "£30.00",
+      "gender": "Womens",
+      "img": "Women's Jumper Black Logo.jpg"
+    },
+    {
+      "product_id": 15,
+      "brand": "Know Better",
+      "product": "Hoodie",
+      "colour": "White",
+      "size": "Medium",
+      "price": "£30.00",
+      "gender": "Unisex",
+      "img": "Unisex Hoodie White.jpg"
+    },
+    {
+      "product_id": 16,
+      "brand": "Know Better",
+      "product": "Hoodie",
+      "colour": "White",
+      "size": "Medium",
+      "price": "£30.00",
+      "gender": "Unisex",
+      "img": "Unisex Hoodie White With Logo.jpg"
     }
+    
   ]
 }
