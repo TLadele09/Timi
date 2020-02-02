@@ -5,6 +5,7 @@
     top: 467px;
     left: 292px;
 }
+
 p {
     font-size: 15pt;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -27,6 +28,7 @@ p {
     width: 110px;
     height: 130px;
 }
+
 img {
     display: block;
     margin: 100 auto;
