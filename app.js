@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 const home_routes = require('./routes/home')
 const shop_routes = require('./routes/shop')
 const mens_routes = require('./routes/mens')
+const mensjumpers_routes = require('./routes/mensjumpers')
 const womens_routes = require('./routes/womens')
 const contact_routes = require('./routes/contact')
 const about_routes = require('./routes/about')
@@ -30,6 +31,8 @@ app.use(contact_routes);
 app.use(about_routes);
 
 app.use(mens_routes);
+
+app.use(mensjumpers_routes);
 
 app.use(womens_routes);
 
