@@ -5,6 +5,7 @@ const shop_routes = require('./routes/shop')
 const mens_routes = require('./routes/mens')
 const mensjumpers_routes = require('./routes/mensjumpers')
 const womens_routes = require('./routes/womens')
+const womensjumpers_routes = require('./routes/womensjumpers')
 const contact_routes = require('./routes/contact')
 const about_routes = require('./routes/about')
 const login_routes = require('./routes/login') 
@@ -35,6 +36,8 @@ app.use(mens_routes);
 app.use(mensjumpers_routes);
 
 app.use(womens_routes);
+
+app.use(womensjumpers_routes);
 
 app.use(login_routes);
 
