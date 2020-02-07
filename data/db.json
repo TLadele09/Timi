@@ -66,7 +66,7 @@
       "brand": "Know Better",
       "product": "Jumper",
       "colour": "Black",
-      "size": "Small",
+      "size": "",
       "price": "£25.00",
       "gender": "Mens",
       "img": "Men's Jumper Black.jpg"
@@ -76,7 +76,7 @@
       "brand": "Know Better",
       "product": "Jumper",
       "colour": "White",
-      "size": "Medium",
+      "size": "",
       "price": "£25.00",
       "gender": "Mens",
       "img": "Men's Jumper White.jpg"
@@ -86,7 +86,7 @@
       "brand": "Know Better",
       "product": "Hoodie",
       "colour": "Black",
-      "size": "Medium",
+      "size": "",
       "price": "£30.00",
       "gender": "Mens",
       "img": "Men's Hoodie Black With Logo.jpg"
@@ -96,7 +96,7 @@
       "brand": "Know Better",
       "product": "Hoodie",
       "colour": "Black",
-      "size": "Medium",
+      "size": "",
       "price": "£30.00",
       "gender": "Mens",
       "img": "Men's Hoodie Black.jpg"
@@ -106,7 +106,7 @@
       "brand": "Know Better",
       "product": "T-Shirt",
       "colour": "White",
-      "size": "Medium",
+      "size": "",
       "price": "£20.00",
       "gender": "Mens",
       "img": "Men's T-Shirt White.jpg"
@@ -116,7 +116,7 @@
       "brand": "Know Better",
       "product": "T-Shirt",
       "colour": "Grey",
-      "size": "Medium",
+      "size": "",
       "price": "£20.00",
       "gender": "Mens",
       "img": "Men's T-Shirt Grey.jpg"
@@ -126,7 +126,7 @@
       "brand": "Know Better",
       "product": "T-Shirt",
       "colour": "Navy",
-      "size": "Medium",
+      "size": "",
       "price": "£20.00",
       "gender": "Mens",
       "img": "Men's T-Shirt Navy.jpg"
@@ -146,7 +146,7 @@
       "brand": "Know Better",
       "product": "T-Shirt",
       "colour": "Grey",
-      "size": "Medium",
+      "size": "",
       "price": "£20.00",
       "gender": "Womens",
       "img": "Women's T-Shirt Grey.jpg"
@@ -156,7 +156,7 @@
       "brand": "Know Better",
       "product": "T-Shirt",
       "colour": "Navy",
-      "size": "Medium",
+      "size": "",
       "price": "£20.00",
       "gender": "Womens",
       "img": "Women's T-Shirt Navy.jpg"
@@ -166,7 +166,7 @@
       "brand": "Know Better",
       "product": "T-Shirt",
       "colour": "Black",
-      "size": "Medium",
+      "size": "",
       "price": "£20.00",
       "gender": "Womens",
       "img": "Women's T-Shirt Black.jpg"
@@ -176,7 +176,7 @@
       "brand": "Know Better",
       "product": "Jumper",
       "colour": "Black",
-      "size": "Medium",
+      "size": "",
       "price": "£30.00",
       "gender": "Womens",
       "img": "Women's Jumper Black.jpg"
@@ -186,7 +186,7 @@
       "brand": "Know Better",
       "product": "Jumper",
       "colour": "White",
-      "size": "Small",
+      "size": "",
       "price": "£30.00",
       "gender": "Womens",
       "img": "Women's Jumper White.jpg"
@@ -196,7 +196,7 @@
       "brand": "Know Better",
       "product": "Jumper",
       "colour": "Black",
-      "size": "Medium",
+      "size": "",
       "price": "£30.00",
       "gender": "Womens",
       "img": "Women's Jumper Black Logo.jpg"
@@ -206,7 +206,7 @@
       "brand": "Know Better",
       "product": "Hoodie",
       "colour": "White",
-      "size": "Medium",
+      "size": "",
       "price": "£30.00",
       "gender": "Unisex",
       "img": "Unisex Hoodie White.jpg"
@@ -216,7 +216,7 @@
       "brand": "Know Better",
       "product": "Hoodie",
       "colour": "White",
-      "size": "Medium",
+      "size": "",
       "price": "£30.00",
       "gender": "Unisex",
       "img": "Unisex Hoodie White With Logo.jpg"

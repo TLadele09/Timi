@@ -1,18 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser')
 const home_routes = require('./routes/home')
-const shop_routes = require('./routes/shop')
-const mens_routes = require('./routes/mens')
-const mensjumpers_routes = require('./routes/mensjumpers')
-const womens_routes = require('./routes/womens')
-const womensjumpers_routes = require('./routes/womensjumpers')
 const contact_routes = require('./routes/contact')
 const about_routes = require('./routes/about')
+const shop_routes = require('./routes/shop')
 const login_routes = require('./routes/login') 
 const signup_routes = require('./routes/signup')
+const mens_routes = require('./routes/mens')
+const womens_routes = require('./routes/womens')
 const cart_routes = require('./routes/cart')
-const payment_routes = require('./routes/payment')
 const delivery_routes = require('./routes/delivery')
+const payment_routes = require('./routes/payment')
+const mensjumpers_routes = require('./routes/mensjumpers')
+const womensjumpers_routes = require('./routes/womensjumpers')
+const menstshirts_routes = require('./routes/menstshirts')
 const path = require('path')
 const app = express();
 //middleware
@@ -34,6 +35,8 @@ app.use(about_routes);
 app.use(mens_routes);
 
 app.use(mensjumpers_routes);
+
+app.use(menstshirts_routes);
 
 app.use(womens_routes);
 

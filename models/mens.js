@@ -13,6 +13,9 @@ module.exports = class Mens {
     jumpers(){
         return db.get('products').filter({gender: "Mens", product: "Jumper"}).value()
     }
+    tshirts(){
+        return db.get('products').filter({gender: "Mens", product: "T-Shirt"})
+    }
     fetchAllProducts(){
         return db.get('products').value()
     }
