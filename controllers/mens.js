@@ -27,6 +27,7 @@ exports.getMensJumper = (req, res) => {
     result = mens.jumper(parseInt(productId))
     console.log(result)
     // console.log("This is the product ID", productId)
+    res.render('mensJumperDetail', {title: 'KBC Mens Jumper Detail', path: '/mensjumpers', temp: result})
 
 }
 exports.postMensJumpers = (req, res) => {
