@@ -4,7 +4,7 @@ exports.getMensProduct = (req, res) => {
     const mens = new Mens()
     result = mens.fetchProduct()
     temp = mens.fetchAllProducts()
-    console.log(temp)
+    // console.log(temp)
     res.render('mens', {title: 'KBC Mens', path: '/mens', temp: result})
 }
 exports.postMensProduct = (req, res) => {
@@ -12,31 +12,35 @@ exports.postMensProduct = (req, res) => {
     const mens = new Mens()
     result = mens.fetchProduct()
     temp = mens.fetchAllProducts()
-    console.log(temp)
+    // console.log(temp)
 }
 exports.getMensJumpers = (req, res) => {
     const mens = new Mens()
     result2 = mens.jumpers()
     temp = mens.fetchAllProducts()
-    console.log(temp)
+    // console.log(temp)
     res.render('mensjumpers', {title: 'KBC Mens Jumpers', path: '/mensjumpers', temp: result2})
 }
 exports.getMensJumper = (req, res) => {
+    const mens = new Mens()
     const productId = req.params.product_id
-    console.log("This is the product ID", productId)
+    result = mens.jumper(parseInt(productId))
+    console.log(result)
+    // console.log("This is the product ID", productId)
+
 }
 exports.postMensJumpers = (req, res) => {
     console.log(req.body.emailAddress, req.body.password)
     const mens = new Mens()
     result2 = mens.jumpers()
     temp = mens.fetchAllProducts()
-    console.log(temp)
+    // console.log(temp)
 }
 exports.getMensTshirts = (req, res) => {
     const mens = new Mens()
     result2 = mens.tshirts()
     temp = mens.fetchAllProducts()
-    console.log(temp)
+    // console.log(temp)
     res.render('menstshirts', {title: 'KBC Mens Jumpers', path: '/menstshirts', temp: result2})
 }
 exports.postMensTshirts = (req, res) => {
@@ -44,5 +48,5 @@ exports.postMensTshirts = (req, res) => {
     const mens = new Mens()
     result2 = mens.tshirts()
     temp = mens.fetchAllProducts()
-    console.log(temp)
+    // console.log(temp)
 }
