@@ -21,6 +21,10 @@ exports.getMensJumpers = (req, res) => {
     console.log(temp)
     res.render('mensjumpers', {title: 'KBC Mens Jumpers', path: '/mensjumpers', temp: result2})
 }
+exports.getMensJumper = (req, res) => {
+    const productId = req.params.product_id
+    console.log("This is the product ID", productId)
+}
 exports.postMensJumpers = (req, res) => {
     console.log(req.body.emailAddress, req.body.password)
     const mens = new Mens()
