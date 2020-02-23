@@ -7,7 +7,11 @@ const db = low(adapter)
 module.exports = class Mens {
     constructor(){
     }
-    fetchProduct(){
+    fetchProduct(productId){
+        // console.log("inside model", productId)
+        return db.get('products').find({product_id: productId}).value()
+    }
+    fetchProducts(){
         const newResults = []
         const results = db.get('products').filter({gender: "Mens"}).value()
         // console.log('=========FETCHPRODUCT========')
