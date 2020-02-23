@@ -60,13 +60,25 @@
       "quantity": 2
     }
   ],
+  "colours": [
+    {"colour_id": 1, "colour":"black"},
+    {"colour_id": 2, "colour": "white"},
+    {"colour_id": 3, "colour": "grey"}
+  ],
+  "sizes": [
+    {"size_id": 1, "size": "Small"},
+    {"size_id": 2, "size": "Medium"},
+    {"size_id": 3, "size":"Large"},
+    {"size_id": 4, "size":"XL"},
+    {"size_id": 5, "size":"XXL"}
+  ],
   "products": [
     {
       "product_id": 1,
       "brand": "Know Better",
       "product": "Jumper",
-      "colour": "Black",
-      "size": "",
+      "colour_id": 1,
+      "size_id": 2,
       "price": "£25.00",
       "gender": "Mens",
       "img": "Men's Jumper Black.jpg"
@@ -75,17 +87,17 @@
       "product_id": 2,
       "brand": "Know Better",
       "product": "Jumper",
-      "colour": "White",
-      "size": "",
+      "colour_id": 2,
+      "size": 1,
       "price": "£25.00",
       "gender": "Mens",
       "img": "Men's Jumper White.jpg"
     },
-        {
+      {
       "product_id": 3,
       "brand": "Know Better",
       "product": "Hoodie",
-      "colour": "Black",
+      "colour_id": 1,
       "size": "",
       "price": "£30.00",
       "gender": "Mens",
@@ -95,7 +107,7 @@
       "product_id": 4,
       "brand": "Know Better",
       "product": "Hoodie",
-      "colour": "Black",
+      "colour_id": 1,
       "size": "",
       "price": "£30.00",
       "gender": "Mens",
@@ -105,7 +117,7 @@
       "product_id": 5,
       "brand": "Know Better",
       "product": "T-Shirt",
-      "colour": "White",
+      "colour_id": 1,
       "size": "",
       "price": "£20.00",
       "gender": "Mens",
@@ -115,7 +127,7 @@
       "product_id": 6,
       "brand": "Know Better",
       "product": "T-Shirt",
-      "colour": "Grey",
+      "colour_id": 1,
       "size": "",
       "price": "£20.00",
       "gender": "Mens",
@@ -125,7 +137,7 @@
       "product_id": 7,
       "brand": "Know Better",
       "product": "T-Shirt",
-      "colour": "Navy",
+      "colour_id": 1,
       "size": "",
       "price": "£20.00",
       "gender": "Mens",
@@ -135,7 +147,7 @@
       "product_id": 8,
       "brand": "Know Better",
       "product": "T-Shirt",
-      "colour": "Black",
+      "colour_id": 1,
       "size": "",
       "price": "£20.00",
       "gender": "Mens",
@@ -145,7 +157,7 @@
       "product_id": 9,
       "brand": "Know Better",
       "product": "T-Shirt",
-      "colour": "Grey",
+      "colour_id": 1,
       "size": "",
       "price": "£20.00",
       "gender": "Womens",
@@ -155,7 +167,7 @@
       "product_id": 10,
       "brand": "Know Better",
       "product": "T-Shirt",
-      "colour": "Navy",
+      "colour_id": 1,
       "size": "",
       "price": "£20.00",
       "gender": "Womens",
@@ -165,7 +177,7 @@
       "product_id": 11,
       "brand": "Know Better",
       "product": "T-Shirt",
-      "colour": "Black",
+      "colour_id": 1,
       "size": "",
       "price": "£20.00",
       "gender": "Womens",
@@ -175,7 +187,7 @@
       "product_id": 12,
       "brand": "Know Better",
       "product": "Jumper",
-      "colour": "Black",
+      "colour_id": 1,
       "size": "",
       "price": "£30.00",
       "gender": "Womens",
@@ -185,7 +197,7 @@
       "product_id": 13,
       "brand": "Know Better",
       "product": "Jumper",
-      "colour": "White",
+      "colour_id": 1,
       "size": "",
       "price": "£30.00",
       "gender": "Womens",
@@ -195,7 +207,7 @@
       "product_id": 14,
       "brand": "Know Better",
       "product": "Jumper",
-      "colour": "Black",
+      "colour_id": 1,
       "size": "",
       "price": "£30.00",
       "gender": "Womens",
@@ -205,7 +217,7 @@
       "product_id": 15,
       "brand": "Know Better",
       "product": "Hoodie",
-      "colour": "White",
+      "colour_id": 1,
       "size": "",
       "price": "£30.00",
       "gender": "Unisex",
@@ -215,12 +227,26 @@
       "product_id": 16,
       "brand": "Know Better",
       "product": "Hoodie",
-      "colour": "White",
+      "colour_id": 1,
       "size": "",
       "price": "£30.00",
       "gender": "Unisex",
       "img": "Unisex Hoodie White With Logo.jpg"
     }
     
+  ],
+  "carts": [
+    {
+      "cart_id": 1,
+      "customer_id":"1CW67OZQ",
+      "products":[
+        {"product_id":2, "quantity": 5}
+      ]
+
+
+    },
+    {
+
+    }
   ]
 }

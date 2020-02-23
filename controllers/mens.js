@@ -3,7 +3,6 @@ const Mens = require('../models/mens');
 exports.getMensProduct = (req, res) => {
     const mens = new Mens()
     result = mens.fetchProduct()
-    temp = mens.fetchAllProducts()
     // console.log(temp)
     res.render('mens', {title: 'KBC Mens', path: '/mens', temp: result})
 }
@@ -27,7 +26,7 @@ exports.getMensJumper = (req, res) => {
     result = mens.jumper(parseInt(productId))
     console.log(result)
     // console.log("This is the product ID", productId)
-    res.render('mensJumperDetail', {title: 'KBC Mens Jumper Detail', path: '/mensjumpers', temp: result})
+    res.render('detailpage', {title: 'KBC Mens Jumper Detail', path: '/mensjumpers', temp: result})
 
 }
 exports.postMensJumpers = (req, res) => {
@@ -50,7 +49,7 @@ exports.getMensTshirt = (req, res) => {
     result = mens.tshirt(parseInt(productId))
     console.log(result)
     // console.log("This is the product ID", productId)
-    res.render('mensJumperDetail', {title: 'KBC Mens Tshirt Detail', path: '/menstshirt', temp: result})
+    res.render('detailpage', {title: 'KBC Mens Tshirt Detail', path: '/menstshirt', temp: result})
 
 }
 exports.postMensTshirts = (req, res) => {

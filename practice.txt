@@ -1,0 +1,51 @@
+Cart:
+addToCart
+isCartEmpty
+removeFromCart
+isCartFull
+createCart
+deleteACart
+Preconditions:
+- Cart doesn't exist already
+- Customer selected a product where they have clicked add to cart.
+- Cart would need an ID for the Cart, a foreign key to identify customer (customerID), 
+
+
+- Precondition for add to cart is that the cart already exists.
+- Once they have added to cart, you have to to check is the cart is full
+----- ProductId foreign key needed in cart table to link back to product table
+----- Cart table needs a quantity to keep track of amount of products
+
+
+- 
+
+
+
+=========FETCHPRODUCT========
+[{ product_id: 1,
+  brand: 'Know Better',
+  product: 'Jumper',
+  colour_id: 1,
+  size_id: 2,
+  price: '£25.00',
+  gender: 'Mens',
+  img: 'Men\'s Jumper Black.jpg' }]
+=========ENDPRODUCT========
+
+
+loop through products array
+ ---for each product grab colour_id
+ -------with 'colour_id' from products table, need to perform a lookup with 'colour_id' in colour table and store 'colour'
+ -------store 'colour' in the array
+
+=========FETCHPRODUCT========
+[{ product_id: 1,
+  brand: 'Know Better',
+  product: 'Jumper',
+  colour_id: 1,
+  size_id: 2,
+  price: '£25.00',
+  gender: 'Mens',
+  img: 'Men\'s Jumper Black.jpg',
+  colour: 'black' }]
+=========ENDPRODUCT========

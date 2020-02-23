@@ -27,7 +27,7 @@ exports.getWomensJumper = (req, res) => {
     result = womens.jumper(parseInt(productId))
     console.log(result)
     // console.log("This is the product ID", productId)
-    res.render('mensJumperDetail', {title: 'KBC Womens Jumper Detail', path: '/womensjumpers', temp: result})
+    res.render('detailpage', {title: 'KBC Womens Jumper Detail', path: '/womensjumpers', temp: result})
 
 }
 exports.postWomensJumpers = (req, res) => {

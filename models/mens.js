@@ -8,7 +8,22 @@ module.exports = class Mens {
     constructor(){
     }
     fetchProduct(){
-        return db.get('products').filter({gender: "Mens"}).value()
+        const newResults = []
+        const results = db.get('products').filter({gender: "Mens"}).value()
+        // console.log('=========FETCHPRODUCT========')
+        // console.log(results[0])
+        // console.log('=========ENDPRODUCT========')
+        for (let product of results){
+            // console.log('=========FORLOOP========')
+            // console.log(product.colour_id)
+            // console.log('=========ENDFORLOOP========')
+            const colourNew =  db.get('colours').find({colour_id: product.colour_id}).value()
+            // console.log(colour.colour)
+            const item = {...product, colour:colourNew.colour}
+            newResults.push(item)
+            // console.log(item)
+        }
+        return newResults
     }
     jumper(productId){
         // console.log("inside model", productId)
