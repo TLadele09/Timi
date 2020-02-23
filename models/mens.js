@@ -17,6 +17,10 @@ module.exports = class Mens {
     jumpers(){
         return db.get('products').filter({gender: "Mens", product: "Jumper"}).value()
     }
+    tshirt(productId){
+        // console.log("inside model", productId)
+        return db.get('products').find({product_id: productId}).value()
+    }
     tshirts(){
         return db.get('products').filter({gender: "Mens", product: "T-Shirt"})
     }
