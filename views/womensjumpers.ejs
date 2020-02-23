@@ -8,9 +8,9 @@
 <br>
 <div class="row">
     <% for(data of temp) { %>
-        <% console.log(data) %>
+        <!-- <% console.log(data) %> -->
         <div class="columnproduct">
-            <a href="">
+            <a href="/womensjumpers/<%= data.product_id%>">
                 <img src="/images/<%= data.img %>" alt="">
                 <p>
                     <%= data.brand %>
