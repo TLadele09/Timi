@@ -44,6 +44,15 @@ exports.getMensTshirts = (req, res) => {
     // console.log(temp)
     res.render('menstshirts', {title: 'KBC Mens Jumpers', path: '/menstshirts', temp: result2})
 }
+exports.getMensTshirt = (req, res) => {
+    const mens = new Mens()
+    const productId = req.params.product_id
+    result = mens.tshirt(parseInt(productId))
+    console.log(result)
+    // console.log("This is the product ID", productId)
+    res.render('mensJumperDetail', {title: 'KBC Mens Tshirt Detail', path: '/menstshirt', temp: result})
+
+}
 exports.postMensTshirts = (req, res) => {
     console.log(req.body.emailAddress, req.body.password)
     const mens = new Mens()
