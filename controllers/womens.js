@@ -16,10 +16,10 @@ exports.postWomensProduct = (req, res) => {
 }
 exports.getWomensJumpers = (req, res) => {
     const womens = new Womens()
-    result2 = womens.jumpers()
+    result = womens.jumpers()
     temp = womens.fetchAllProducts()
     // console.log(temp)
-    res.render('womensjumpers', {title: 'KBC Womens Jumpers', path: '/womensjumpers', temp: result2})
+    res.render('womensjumpers', {title: 'KBC Womens Jumpers', path: '/womensjumpers', temp: result})
 }
 exports.getWomensJumper = (req, res) => {
     const womens = new Womens()
