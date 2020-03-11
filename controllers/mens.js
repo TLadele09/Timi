@@ -1,4 +1,5 @@
 const Mens = require('../models/mens');
+const Sizes = require('../models/sizes')
 
 exports.getMensProducts = (req, res) => {
     const mens = new Mens()
@@ -8,14 +9,16 @@ exports.getMensProducts = (req, res) => {
 }
 exports.getMensProduct = (req, res) => {
     const mens = new Mens()
+    const sizes = new Sizes()
+    const mensSizes = sizes.fetchSizes()
     const productId = req.params.product_id
     result = mens.fetchProduct(parseInt(productId))
-    console.log(result)
+    console.log("This is", mensSizes)  
     // console.log("This is the product ID", productId)
-    res.render('detailpage', {title: 'KBC Mens Product Detail', path: '/mens', temp: result})
+    res.render('detailpage', {title: 'KBC Mens Product Detail', path: '/mens', temp: result, sizes: mensSizes})
 }
 exports.postMensProducts = (req, res) => {
-    console.log(req.body.emailAddress, req.body.password)
+    // console.log(req.body.emailAddress, req.body.password)
     const mens = new Mens()
     result = mens.fetchProduct()
     temp = mens.fetchAllProducts()
@@ -30,14 +33,19 @@ exports.getMensJumpers = (req, res) => {
 }
 exports.getMensJumper = (req, res) => {
     const mens = new Mens()
+    const sizes = new Sizes()
+    const mensSizes = sizes.fetchSizes()
+    const colour = mens.fetchProducts()
     const productId = req.params.product_id
     result = mens.jumper(parseInt(productId))
     console.log(result)
+    console.log(colour)
+    // console.log("This is", mensSizes)
     // console.log("This is the product ID", productId)
-    res.render('detailpage', {title: 'KBC Mens Jumper Detail', path: '/mensjumpers', temp: result})
+    res.render('detailpage', {title: 'KBC Mens Jumper Detail', path: '/mensjumpers', temp: result, sizes: mensSizes, colour: colour})
 }
 exports.postMensJumpers = (req, res) => {
-    console.log(req.body.emailAddress, req.body.password)
+    // console.log(req.body.emailAddress, req.body.password)
     const mens = new Mens()
     result = mens.jumpers()
     temp = mens.fetchAllProducts()
@@ -48,23 +56,36 @@ exports.getMensTshirts = (req, res) => {
     result = mens.tshirts()
     temp = mens.fetchAllProducts()
     // console.log(temp)
-    res.render('menstshirts', {title: 'KBC Mens Jumpers', path: '/menstshirts', temp: result})
+    res.render('menstshirts', {title: 'KBC Mens T-Shirts', path: '/menstshirts', temp: result})
 }
 exports.getMensTshirt = (req, res) => {
     const mens = new Mens()
+    const sizes = new Sizes()
+    const mensSizes = sizes.fetchSizes()
     const productId = req.params.product_id
     result = mens.tshirt(parseInt(productId))
     console.log(result)
+    // console.log("This is", mensSizes)
     // console.log("This is the product ID", productId)
-    res.render('detailpage', {title: 'KBC Mens Tshirt Detail', path: '/menstshirt', temp: result})
-
+    res.render('detailpage', {title: 'KBC Mens T-Shirt Detail', path: '/menstshirt', temp: result, sizes: mensSizes})
 }
 exports.postMensTshirts = (req, res) => {
-    console.log(req.body.emailAddress, req.body.password)
+    // console.log(req.body.emailAddress, req.body.password)
     const mens = new Mens()
     result = mens.tshirts()
     temp = mens.fetchAllProducts()
     // console.log(temp)
+}
+exports.getMensHoodie = (req, res) => {
+    const mens = new Mens()
+    const sizes = new Sizes()
+    const mensSizes = sizes.fetchSizes()
+    const productId = req.params.product_id
+    result = mens.hoodie(parseInt(productId))
+    console.log(result)
+    // console.log("This is", mensSizes)
+    // console.log("This is the product ID", productId)
+    res.render('detailpage', {title: 'KBC Mens Hoodies Detail', path: '/menshoodies', temp: result, sizes: mensSizes})
 }
 exports.getMensHoodies = (req, res) => {
     const mens = new Mens()
@@ -73,17 +94,9 @@ exports.getMensHoodies = (req, res) => {
     // console.log(temp)
     res.render('menshoodies', {title: 'KBC Mens Hoodies', path: '/menshoodies', temp: result})
 }
-exports.getMensHoodie = (req, res) => {
-    const mens = new Mens()
-    const productId = req.params.product_id
-    result = mens.hoodie(parseInt(productId))
-    console.log(result)
-    // console.log("This is the product ID", productId)
-    res.render('detailpage', {title: 'KBC Mens Hoodies Detail', path: '/menshoodies', temp: result})
 
-}
 exports.postMensHoodies = (req, res) => {
-    console.log(req.body.emailAddress, req.body.password)
+    // console.log(req.body.emailAddress, req.body.password)
     const mens = new Mens()
     result = mens.hoodies()
     temp = mens.fetchAllProducts()

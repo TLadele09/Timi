@@ -3,8 +3,8 @@ const womensController = require('../controllers/womens')
 const router = express.Router();
 
 
-router.get('/womens', womensController.getWomensProduct)
-router.post('/womens', womensController.postWomensProduct)
+router.get('/womens', womensController.getWomensProducts)
+router.post('/womens', womensController.postWomensProducts)
 
-
+router.get('/womens/:product_id', womensController.getWomensProduct)
 module.exports = router

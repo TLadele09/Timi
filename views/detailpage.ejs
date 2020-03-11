@@ -1,7 +1,7 @@
 <%- include('includes/head.ejs') %>
 </head>
 <body>
-    
+<%- include('includes/cart.ejs') %>
 <%- include('includes/navigation.ejs') %>
 <img src="/images/<%= temp.img %>" alt="">
                     <p>
@@ -14,7 +14,25 @@
                     <p>
                         <%= temp.price %>
                     </p>
-                    
-                    
+                
+                        
+<form action="/cart" method="POST">
+    <button type="submit">Add To Cart</button>
+    <input type="hidden" name="productId" value="<%= temp.product_id %>">
+    <select id="productSizes" name="ps">
+        <% for (data of sizes){ %>
+            <option value="<%= data.size %>"><%= data.size %></option>
+        <%}%>
+        
+        </select>
+        <div class="quantity">
+            <button class="plus-btn" type="button" name="button">+
+            </button>
+            <input type="text" value="1" name="qty" style="width: 4%; text-align: center;">
+            <button class="minus-btn" type="button" name="button">-
+            </button>
+          </div>
+
+</form>
 <%- include('includes/footer.ejs') %>
 </html>
