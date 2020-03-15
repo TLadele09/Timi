@@ -20,4 +20,14 @@ module.exports = class Cart {
         .find({product_id: idx})
         .value()
     }
+    saveToCart(prodId,size,qty){
+        //get customers id from cart
+        const cts = db.get('carts').find({customer_id:"1CW67OZQ"})
+        //retrieve products array from cart
+        const prods = cts.value().products
+        //push new product into array
+        prods.push({product_id: prodId, quantity: qty, size: size})
+        //update the db with new product
+        cts.assign({products:prods}).write()
+    }
 }

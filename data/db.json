@@ -61,17 +61,44 @@
     }
   ],
   "colours": [
-    {"colour_id": 1, "colour": "Black"},
-    {"colour_id": 2, "colour": "White"},
-    {"colour_id": 3, "colour": "Grey"},
-    {"colour_id": 4, "colour": "Navy"}
+    {
+      "colour_id": 1,
+      "colour": "Black"
+    },
+    {
+      "colour_id": 2,
+      "colour": "White"
+    },
+    {
+      "colour_id": 3,
+      "colour": "Grey"
+    },
+    {
+      "colour_id": 4,
+      "colour": "Navy"
+    }
   ],
   "sizes": [
-    {"size_id": 1, "size": "Small"},
-    {"size_id": 2, "size": "Medium"},
-    {"size_id": 3, "size":"Large"},
-    {"size_id": 4, "size":"XL"},
-    {"size_id": 5, "size":"XXL"}
+    {
+      "size_id": 1,
+      "size": "Small"
+    },
+    {
+      "size_id": 2,
+      "size": "Medium"
+    },
+    {
+      "size_id": 3,
+      "size": "Large"
+    },
+    {
+      "size_id": 4,
+      "size": "XL"
+    },
+    {
+      "size_id": 5,
+      "size": "XXL"
+    }
   ],
   "products": [
     {
@@ -94,7 +121,7 @@
       "gender": "Mens",
       "img": "Men's Jumper White.jpg"
     },
-      {
+    {
       "product_id": 3,
       "brand": "Know Better",
       "product": "Hoodie",
@@ -234,20 +261,23 @@
       "gender": "Unisex",
       "img": "Unisex Hoodie White With Logo.jpg"
     }
-    
   ],
   "carts": [
     {
       "cart_id": 1,
-      "customer_id":"1CW67OZQ",
-      "products":[
-        {"product_id":2, "quantity": 5}
+      "customer_id": "1CW67OZQ",
+      "products": [
+        {
+          "product_id": 2,
+          "quantity": 5,
+          "size": "Small"
+        },
+        {
+          "product_id": 10,
+          "quantity": 1,
+          "size": "Medium"
+        }
       ]
-
-
-    },
-    {
-
     }
   ]
 }
