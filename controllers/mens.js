@@ -15,7 +15,7 @@ exports.getMensProduct = (req, res) => {
     result = mens.fetchProduct(parseInt(productId))
     console.log("This is", mensSizes)  
     // console.log("This is the product ID", productId)
-    res.render('detailpage', {title: 'KBC Mens Product Detail', path: '/mens', temp: result, sizes: mensSizes})
+    res.render('detailpage', {title: 'KBC Product Detail', path: '/mens', temp: result, sizes: mensSizes})
 }
 exports.postMensProducts = (req, res) => {
     // console.log(req.body.emailAddress, req.body.password)

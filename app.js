@@ -41,13 +41,13 @@ app.use(mensjumpers_routes);
 
 app.use(menstshirts_routes);
 
+app.use(menshoodies_routes);
+
 app.use(womenstshirts_routes);
 
 app.use(womens_routes);
 
 app.use(womensjumpers_routes);
-
-app.use(menshoodies_routes);
 
 app.use(womenshoodies_routes);
 
