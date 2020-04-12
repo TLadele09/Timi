@@ -1,7 +1,8 @@
 const Shop = require('../models/shop')
+const Sizes = require('../models/sizes')
+
 
 exports.getShopProducts = (req, res) => {
-    console.log(req.body.emailAddress, req.body.password)
     const shop = new Shop()
     const result = shop.fetchProduct()
     temp = shop.fetchAllProducts()
@@ -25,14 +26,7 @@ exports.postShopProducts = (req, res) => {
     // if (req.body.emailAddress==="timi"){
     //     res.render('shop', {title: 'SHOP', path: '/shop', data: result, sum: 2})
     // }
-    const user = shop.verifyLogin(req.body.emailAddress)
-    console.log(user)
-    if (user){
-        res.render('shop', {title: 'SHOP', path: '/shop', data: result, sum: 2})
-    }
-    else {
-        res.redirect('/')
-    }
+    
 }
 shopAddition = (num1, num2) => {
     return num1 + num2

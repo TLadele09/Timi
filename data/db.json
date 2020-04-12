@@ -35,6 +35,23 @@
       "city": "Bluestreet",
       "country": "England",
       "password": "Timi8674"
+    },
+    {
+      "customer_id": "op6_6RJ1f"
+    },
+    {
+      "customer_id": "LZzEa0sFc",
+      "firstname": "Jason",
+      "surname": "Black",
+      "emailAddress": "jason.black@hotmail.com",
+      "houseNumber": "0796318764",
+      "streetName": "Bluestreet Rd",
+      "city": "Bluestreet",
+      "country": "England",
+      "password": "Tripleh6"
+    },
+    {
+      "customer_id": "IhQUm9_5O"
     }
   ],
   "orders": [
@@ -261,6 +278,7 @@
       "gender": "Unisex",
       "img": "Unisex Hoodie White With Logo.jpg"
     }
+
   ],
   "carts": [
     {

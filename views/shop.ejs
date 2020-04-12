@@ -6,26 +6,26 @@
 <hr>
 <br>
 <br>
-    <div class="row">
-        <% for(data of temp) { %>
-            <% console.log(data) %>
-            <div class="columnproduct">
-                <a href="">
-                    <img src="/images/<%= data.img %>" alt="">
-                    <p>
-                        <%= data.brand %>
-                        <%= data.product %>
-                        <%= data.colour %>
-                        <%= data.gender %>
-                         
-                    </p>
-                    <p>
-                        <%= data.price %>
-                    </p>
-                </a>
-            </div>
-            <% } %>  
-    </div>
+<div class="row">
+    <% for(data of temp) { %>
+        <!-- <% console.log(data) %> -->
+        <div class="columnproduct">
+            <a href="/shop/<%= data.product_id%>">
+                <img src="/images/<%= data.img %>" alt="">
+                <p>
+                    <%= data.brand %>
+                    <%= data.product %>
+                    <%= data.colour %>
+                    <%= data.gender %>
+                     
+                </p>
+                <p>
+                    <%= data.price %>
+                </p>
+            </a>
+        </div>
+        <% } %>  
+</div>
           
     
 <%- include('includes/products.ejs') %>
