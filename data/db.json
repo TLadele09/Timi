@@ -52,6 +52,9 @@
     },
     {
       "customer_id": "IhQUm9_5O"
+    },
+    {
+      "customer_id": "hAEM83k1g"
     }
   ],
   "orders": [
@@ -265,7 +268,7 @@
       "colour_id": 2,
       "size": "",
       "price": "£30.00",
-      "gender": "Unisex",
+      "gender": "Womens",
       "img": "Unisex Hoodie White.jpg"
     },
     {
@@ -275,10 +278,9 @@
       "colour_id": 2,
       "size": "",
       "price": "£30.00",
-      "gender": "Unisex",
+      "gender": "Womens",
       "img": "Unisex Hoodie White With Logo.jpg"
     }
-
   ],
   "carts": [
     {
@@ -299,6 +301,11 @@
           "product_id": 1,
           "quantity": 1,
           "size": "Small"
+        },
+        {
+          "product_id": 1,
+          "quantity": 5,
+          "size": "Large"
         }
       ]
     }

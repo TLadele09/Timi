@@ -17,6 +17,9 @@ const menstshirts_routes = require('./routes/menstshirts')
 const womenstshirts_routes = require('./routes/womenstshirts')
 const menshoodies_routes = require('./routes/menshoodies')
 const womenshoodies_routes = require('./routes/womenshoodies')
+const jumpers_routes = require('./routes/jumpers')
+const hoodies_routes = require('./routes/hoodies')
+const tshirts_routes = require('./routes/tshirts')
 const path = require('path')
 const app = express();
 //middleware
@@ -60,6 +63,12 @@ app.use(cart_routes);
 app.use(payment_routes);
 
 app.use(delivery_routes);
+
+app.use(jumpers_routes);
+
+app.use(hoodies_routes);
+
+app.use(tshirts_routes);
 
 app.use(function(req, res, next) {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'))

@@ -1,0 +1,34 @@
+<%- include('includes/head.ejs') %>
+</head>
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <h1>Know Better Hoodies</h1>
+<hr>
+<br>
+<br>
+<div class="row">
+    <% for(data of temp) { %>
+        <!-- <% console.log(data) %> -->
+        <div class="columnproduct">
+            <a href="/hoodies/<%= data.product_id%>">
+                <img src="/images/<%= data.img %>" alt="">
+                <p>
+                    <%= data.brand %>
+                    <%= data.product %>
+                    <%= data.colour %>
+                    <%= data.gender %>
+                     
+                </p>
+                <p>
+                    <%= data.price %>
+                </p>
+            </a>
+        </div>
+        <% } %>  
+</div>
+          
+    
+<%- include('includes/products.ejs') %>
+<%- include('includes/footer.ejs') %>
+</body>
+</html>
