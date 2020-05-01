@@ -2,9 +2,6 @@
 </head>
 <body>
 <%- include('includes/navigation.ejs') %>
-<div align="center">
-    <img src="/images/Know Better Clothing Logo.jpg" alt="">
-</div>
 <h2 align="center" id="sub-title">Our Contact Page</h2>
 <hr>
 <div align="center">
@@ -12,27 +9,27 @@
         Welcome to Know Better's Contact Page, this page has information regarding our 
         social media platforms and the various ways you can contact us.
     </p>
-    <div class="container" align="center">
+    <div align="center">
         <div style="text-align:center">
           <p align="center">At Know Better Clothing, we appreciate feedback as we feel it enables us to be at our best.</p>
           <p align="center">Leave us a message:</p>
         </div>
-        <div class="row">
-          <div id="contactinfo" align="center">
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
+        <div class="row" align="center">
+          <div align="center">
+            <form action="/action_page.php" method="POST" align="center">
+              <label for="fname" align="center">First Name</label>
               <br>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." style="width: 15%;">
               <br>
               <br>
               <label for="lname">Last Name</label>
               <br>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="width: 15%;">
               <br>
               <br>
               <label for="country">Country</label>
               <br>
-              <select id="country" name="country">
+              <select id="country" name="country" style="width: 25%;">
                 <option value="afghanistan">Afghanistan</option>  
                 <option value="albania">Albania</option>
                 <option value="algeria">Algeria</option>
@@ -57,13 +54,98 @@
                 <option value="france">France</option>
                 <option value="gambia">Gambia</option>
                 <option value="germany">Germany</option>
+                <option value="ghana">Ghana</option>
+                <option value="greece">Greece</option>
+                <option value="guinea">Guinea</option>
+                <option value="guyana">Guyana</option>
+                <option value="haiti">Haiti</option>
+                <option value="honduras">Honduras</option>
+                <option value="hungary">Hungary</option>
+                <option value="iceland">Iceland</option>
+                <option value="india">India</option>
+                <option value="indonesia">Indonesia</option>
+                <option value="iran">Iran</option>
+                <option value="iraq">Iraq</option>
+                <option value="israel">Israel</option>
+                <option value="italy">Italy</option>
+                <option value="ivory coast">Ivory Coast</option>
+                <option value="jamaica">Jamaica</option>
+                <option value="japan">Japan</option>
+                <option value="jordan">Jordan</option>
+                <option value="kazakhstan">Kazakhstan</option>
+                <option value="kosovo">Kosovo</option>
+                <option value="latvia">Latvia</option>
+                <option value="liberia">Liberia</option>
+                <option value="libya">Libya</option>
+                <option value="liechtenstein">Liechtenstein</option>
+                <option value="lithuania">Lithuania</option>
+                <option value="luxembourg">Luxembourg</option>
+                <option value="madagascar">Madagascar</option>
+                <option value="maylaysia">Maylaysia</option>
+                <option value="mali">Mali</option>
+                <option value="malta">Malta</option>
+                <option value="mauritania">Mauritania</option>
+                <option value="mexico">Mexico</option>
+                <option value="mongalia">Mongalia</option>
+                <option value="montenegro">Monteegro</option>
+                <option value="morocco">Morocco</option>
+                <option value="namibia">Namibia</option>
+                <option value="nepal">Nepal</option>
+                <option value="netherlands">Netherlands</option>
+                <option value="new zealand">New Zealand</option>
+                <option value="niger">Niger</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="norway">Norway</option>
+                <option value="oman">Oman</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="panama">Panama</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="peru">Peru</option>
+                <option value="poland">Poland</option>
+                <option value="portugal">Portugal</option>
+                <option value="puerto rico">Puerto Rico</option>
+                <option value="qatar">Qatar</option>
+                <option value="romania">Romania</option>
+                <option value="russia">Russia</option>
+                <option value="saint lucia">Saint Lucia</option>
+                <option value="saudi arabia">Saudi Arabia</option>
+                <option value="samoa">Samoa</option>
+                <option value="senegal">Senegal</option>
+                <option value="serbia">Serbia</option>
+                <option value="sierra leone">Sierra Leone</option>
+                <option value="singapore">Singapore</option>
+                <option value="slovakia">Slovakia</option>
+                <option value="slovenia">Slovenia</option>
+                <option value="somalia">Somalia</option>
+                <option value="southafrica">South Africa</option>
+                <option value="south sudan">South Sudan</option>
+                <option value="spain">Spain</option>
+                <option value="sri lanka">Sri Lanka</option>
+                <option value="sudan">Sudan</option>
+                <option value="sweden">Sweden</option>
+                <option value="switzerland">Switzerland</option>
+                <option value="tanzania">Tanzania</option>
+                <option value="thailand">Thailand</option>
+                <option value="trinidad&tobago">Trinidad & Tobago</option>
+                <option value="tunisia">Tunisia</option>
+                <option value="turkey">Turkey</option>
+                <option value="uganda">Uganda</option>
+                <option value="ukraine">Ukraine</option>
+                <option value="united arab emirates">United Arab Emirates</option>
                 <option value="usa">USA</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="uzbekistan">Uzbekistan</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="vietnam">Vietnam</option>
+                <option value="yemen">Yemen</option>
+                <option value="zambia">Zambia</option>
+                <option value="zimbabwe">Zimbabwe</option>
               </select>
               <br>
               <br>
               <label for="subject">Subject</label>
               <br>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:250px; width: 30%;"></textarea>
               <br>
               <br>
               <input type="submit" value="Submit">

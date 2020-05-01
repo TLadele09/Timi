@@ -53,3 +53,18 @@ img {
     clear: both;
     display: table;
   }
+
+.btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:black;
+    color: white; 
+    font-size: 13px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #555;
+  }

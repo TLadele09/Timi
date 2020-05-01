@@ -3,12 +3,11 @@
 }
 /* Style all font awesome icons */
 .fa {
-    padding: 20px;
-    font-size: 30px;
+    padding: 10px;
     width: 30px;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+    border-radius: 60%;
     float: right;
   }
   /* Add a hover effect if you want */
@@ -36,7 +35,7 @@
 
 /* Style inputs */
 input[type=text], select, textarea {
-  width: 100%;
+  width: 20%;
   padding: 12px;
   border: 1px solid #ccc;
   margin-top: 6px;
@@ -56,12 +55,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
+
 
 /* Create two columns that float next to eachother */
 #contactinfo {
@@ -87,5 +81,9 @@ input[type=submit]:hover {
 }
 p {
   font-style: italic;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h3 {
+  font-size: 20pt;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

@@ -22,10 +22,10 @@ module.exports = class Shop {
             // console.log(product.colour_id)
             // console.log('=========ENDFORLOOP========')
             const colourNew =  db.get('colours').find({colour_id: product.colour_id}).value()
-            // console.log(colour.colour)
+            // console.log(colourNew.colour)
             const item = {...product, colour:colourNew.colour}
             newResults.push(item)
-            // console.log(item)
+            console.log(item)
         }
         return newResults
     }

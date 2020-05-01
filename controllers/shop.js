@@ -4,7 +4,7 @@ const Sizes = require('../models/sizes')
 exports.getShopProducts = (req, res) => {
     const shop = new Shop()
     const result = shop.fetchProduct()
-    temp = shop.fetchAllProducts()
+    temp = shop.fetchProducts()
     res.render('shop', {title: 'KBC SHOP', path: '/shop', data: result, temp: temp})
 }
 exports.getShopProduct = (req, res) => {
